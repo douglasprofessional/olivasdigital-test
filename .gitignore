@@ -53,6 +53,7 @@ wp_project/wp-content/plugins/*
 wp_project/wp-content/themes/*
 !wp_project/wp-content/themes/olivasdigital/
 wp_project/wp-content/themes/olivasdigital/vendor/*
+wp_project/wp-content/themes/olivasdigital/composer.lock
 wp_project/wp-content/upgrade/
 !wp_project/wp-content/uploads/
 wp_project/wp-content/index.php
