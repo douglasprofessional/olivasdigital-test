@@ -42,6 +42,20 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Unnecessary for the repository
+wp_project/public/*
+!wp_project/wp-content/
+wp_project/wp-content/plugins/*
+!wp_project/wp-content/plugins/advanced-custom-fields-pro
+!wp_project/wp-content/plugins/contact-form-7
+!wp_project/wp-content/plugins/safe-svg
+!wp_project/wp-content/plugins/wordpress-seo
+wp_project/wp-content/themes/*
+!wp_project/wp-content/themes/olivasdigital/
+wp_project/wp-content/upgrade/
+!wp_project/wp-content/uploads/
+wp_project/wp-content/index.php
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 

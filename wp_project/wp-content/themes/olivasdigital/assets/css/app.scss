@@ -1,0 +1,36 @@
+/*
+ ITCSS ARCHITECTURE
+ Doc: https://willianjusten.com.br/organizando-seu-css-com-itcss
+*/
+
+// Settings
+@import "./itcss/settings/tailwindcss";
+
+// Tools
+@import "./itcss/tools/lorem";
+
+// Generic
+@import "./itcss/generic/full-image";
+@import "./itcss/generic/transition";
+
+// Base (html tags)
+@import "./itcss/base/html";
+@import "./itcss/base/body";
+@import "./itcss/base/section";
+@import "./itcss/base/main";
+@import "./itcss/base/paragraph";
+
+// Object
+@import "./itcss/objects/container";
+
+// Components
+@import "./itcss/components/page-404";
+@import "./itcss/components/site-header";
+@import "./itcss/components/site-footer";
+
+// Theme
+@import "./itcss/theme/is-default";
+
+// Trumps
+@import "./itcss/trumps/gutenberg";
+@import "./itcss/trumps/hidden";
