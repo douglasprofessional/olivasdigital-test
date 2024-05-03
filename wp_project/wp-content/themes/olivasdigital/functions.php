@@ -43,6 +43,8 @@ function od_setup_theme() {
 		'customizer'           => new OD\Theme\Customizer(),
 		'images'               => new OD\Theme\Images(),
 		'mimetypes'            => new OD\Theme\MimeTypes(),
+		'posttype'             => new OD\Theme\PostType(),
+		'taxonomy'             => new OD\Theme\Taxonomy(),
 		'acfoptions'           => new OD\Theme\Options(),
 		'scripts'              => new OD\Theme\Scripts(),
 		'styles'               => new OD\Theme\Styles(),
