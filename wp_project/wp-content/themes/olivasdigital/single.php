@@ -9,14 +9,28 @@
 
 get_header();
 
-if ( have_posts() ) {
+if ( get_post_type() === 'projects' ) {
 
-	get_template_part( 'template-parts/content/content' );
+	if ( have_posts() ) {
 
-} else {
+		get_template_part( 'template-parts/content/content', 'project' );
 
-	get_template_part( 'template-parts/content/content', 'none' );
+	} else {
 
+		get_template_part( 'template-parts/content/content', 'none' );
+
+	}
+} elseif ( get_post_type() === 'post' ) {
+
+	if ( have_posts() ) {
+
+		get_template_part( 'template-parts/content/content' );
+
+	} else {
+
+		get_template_part( 'template-parts/content/content', 'none' );
+
+	}
 }
 
 get_footer();

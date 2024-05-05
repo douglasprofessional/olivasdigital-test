@@ -88,12 +88,13 @@ class PostType {
 			'menu_position'       => $menu_position,
 			'show_in_admin_bar'   => true,
 			'show_in_nav_menus'   => true,
+			'show_in_rest'		  => true,
 			'can_export'          => true,
 			'has_archive'         => true,
 			'exclude_from_search' => false,
 			'publicly_queryable'  => true,
 			'query_var'           => true,
-			'menu_icon'           => $dashicons,
+			'menu_icon'           => $dashicons
 		);
 		register_post_type( $name_cpt, $args );
 	}

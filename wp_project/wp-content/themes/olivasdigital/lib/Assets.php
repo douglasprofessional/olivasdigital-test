@@ -60,7 +60,7 @@ class Assets {
 	public function admin_favicon() {
 		printf(
 			'<link rel="shortcut icon" href="%s">',
-			esc_url( $this->base_uri . 'atlantic.ico' )
+			esc_url( $this->base_uri . 'olivas_digital_logo.ico' )
 		);
 	}
 
@@ -72,7 +72,7 @@ class Assets {
 	public function favicon() {
 		printf(
 			'<link rel="shortcut icon" href="%s">',
-			esc_url( $this->base_uri . 'atlantic.ico' )
+			esc_url( $this->base_uri . 'olivas_digital_logo.ico' )
 		);
 	}
 }

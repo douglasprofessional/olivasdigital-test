@@ -35,7 +35,7 @@
 	" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri() . '/dist/images/olivas_digital.png'; ?>">
+	<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri() . '/dist/images/olivas_digital_logo.png'; ?>">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">

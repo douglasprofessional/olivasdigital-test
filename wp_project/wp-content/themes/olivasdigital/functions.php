@@ -64,6 +64,18 @@ function od_setup_theme() {
 	}
 }
 
+/**
+ * Removes some menus by page.
+ */
+function wpdocs_remove_menus(){
+	// Posts
+	remove_menu_page( 'edit.php' );
+	
+	// Comments
+	remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', 'wpdocs_remove_menus' );    
+
 add_filter(
 	'default_page_template_title',
 	function() {

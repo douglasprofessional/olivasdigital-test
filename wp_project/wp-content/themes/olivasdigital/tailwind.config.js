@@ -23,6 +23,9 @@ module.exports = {
       letterSpacing: {
         '1px': '1px'
       },
+      brightness: {
+        20: '.20'
+      },
       colors: {
         transparent: 'transparent',
         black: {
@@ -45,7 +48,9 @@ module.exports = {
         inherit: 'inherit'
       },
       minHeight: {
-        '300px': '300px'
+        '300px': '300px',
+        'small': '25%',
+        'medium': '50%'
       },
       maxHeight: {},
       width: {
