@@ -11,7 +11,7 @@
 	<div class="content-none">
 		<div class="container">    
 			<p class="content-none__complement">
-				<strong><?php echo __( 'Ops! Não encontramos o conteúdo buscado!', 'olivasdigital' ); ?></strong>
+				Ops! Não encontramos o conteúdo buscado!
 			</p>
 		</div>
 	</div>

@@ -1,4 +1,12 @@
 .content-none{
     @apply
     w-full;
+
+    &__complement{
+        @apply
+        w-full
+        text-base
+        text-gray-400
+        font-medium;
+    }
 }
