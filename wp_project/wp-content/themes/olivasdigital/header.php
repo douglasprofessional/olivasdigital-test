@@ -20,4 +20,4 @@ get_template_part( 'template-parts/site-header/document-start' );
 		<div class="container"></div>
 	</header>
 
-	<main class="main">
+	<main class="main <?php echo is_404() ? 'main--404' : ''; ?>">

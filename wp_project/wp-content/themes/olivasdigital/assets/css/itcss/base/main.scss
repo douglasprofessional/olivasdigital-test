@@ -1,4 +1,12 @@
-main{
+main.main{
     @apply
-    w-full;
+    w-full
+    min-h-95vh;
+
+    &--404{
+        @apply
+        flex
+        flex-col
+        justify-center;
+    }
 }
