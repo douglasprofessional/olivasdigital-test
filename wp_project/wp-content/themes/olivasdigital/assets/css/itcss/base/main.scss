@@ -1,7 +1,10 @@
 main.main{
     @apply
+    relative
     w-full
-    min-h-95vh;
+    min-h-95vh
+    pt-16
+    z-10;
 
     &--404{
         @apply

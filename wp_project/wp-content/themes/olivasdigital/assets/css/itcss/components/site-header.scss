@@ -1,4 +1,60 @@
 .site-header{
     @apply
-    w-full;
+    fixed
+    top-0
+    w-full
+    bg-white
+    border-b-1
+    border-gray-200
+    z-50;
+
+    &__content{
+        @apply
+        w-full
+        py-5;
+    }
+
+    .mainmenu{        
+       &__container{
+            @apply
+            w-full
+            flex
+            justify-center
+            items-center;
+        }
+    
+        &__list{
+            @apply
+            w-fit
+            flex
+            items-center
+            gap-5
+            mx-auto;
+
+            .menu-item{
+                @extend .transition;
+                @apply
+                w-fit
+                border-b-1
+                border-white
+                pb-[1px];
+
+                &:hover,
+                &.current-menu-item{
+                    @apply
+                    border-gray-300;
+                }
+
+                a{
+                    @apply
+                    w-fit
+                    text-base
+                    text-gray-400
+                    font-normal
+                    leading-normal-important
+                    no-underline;
+                }
+            }
+        }
+    }
 }

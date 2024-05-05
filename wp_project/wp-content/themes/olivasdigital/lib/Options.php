@@ -57,19 +57,6 @@ class Options {
 
 			acf_add_options_page(
 				array(
-					'page_title'  => 'Header',
-					'menu_title'  => 'Header',
-					'menu_slug'   => 'header-config',
-					'capability'  => 'edit_posts',
-					'parent_slug' => '',
-					'position'    => 19,
-					'icon_url'    => 'dashicons-admin-page',
-					'redirect'    => false,
-				)
-			);
-
-			acf_add_options_page(
-				array(
 					'page_title'  => 'Footer',
 					'menu_title'  => 'Footer',
 					'menu_slug'   => 'footer-config',
