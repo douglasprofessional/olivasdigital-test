@@ -1,0 +1,151 @@
+.all-projects{
+    @apply
+    w-full
+    py-12;
+
+    @media(min-width: 1023px){
+        @apply
+        py-16;
+    }
+
+    .container{
+        @apply
+        grid
+        grid-cols-1
+        gap-[20px];            
+    }
+
+    &__title{
+        @apply
+        block
+        w-full
+        text-xl
+        text-gray-400
+        font-medium
+        mx-auto;
+
+        @media(min-width: 1023px){
+            @apply
+            text-2xl;            
+        }
+    }
+
+    &__list{
+        @apply
+        w-full
+        grid
+        grid-cols-1
+        gap-2;
+
+        @media(min-width: 600px){
+            @apply
+            grid-cols-2;
+        }
+
+        @media(min-width: 767px){
+            @apply
+            grid-cols-3;
+        }
+
+        @media(min-width: 1023px){
+            @apply
+            grid-cols-4;
+        }
+    }
+
+    &__item{
+        @apply
+        w-full;
+    }
+
+    &__link{
+        @extend .transition;
+        @apply
+        overflow-hidden
+        flex
+        flex-col
+        gap-1
+        w-full
+        h-full
+        text-sm
+        text-gray-400
+        border-1
+        border-gray-400
+        rounded
+        py-8
+        px-3;
+
+        &--home{
+            @apply
+            gap-0
+            p-0;
+        }
+
+        &:hover{
+            @apply
+            bg-gray-200;
+        }
+
+        @media(min-width: 1023px){
+            @apply
+            text-base;            
+        }
+    }
+
+    &__link-thumbnail{
+        @apply
+        w-full;
+
+        img{
+            @apply
+            block
+            w-full
+            h-40
+            object-cover;            
+        }
+    }
+
+    &__infos{
+        @apply
+        flex
+        flex-col
+        gap-1
+        w-full
+        h-full
+        text-sm
+        p-3;
+    }
+
+    &__link-title{
+        @apply
+        block
+        w-full
+        text-lg
+        text-gray-400
+        font-bold;     
+    }
+
+    &__link-excerpt{
+        @apply
+        block
+        flex-1
+        w-full
+        text-sm
+        text-gray-400;
+    }
+
+    &__link-type{
+        @apply
+        w-full
+        min-h-[50px]
+        border-t-1
+        border-gray-200
+        mt-2
+        pt-2;
+
+        strong{
+            @apply
+            font-medium;
+        }
+    }
+}
