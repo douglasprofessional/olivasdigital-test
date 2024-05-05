@@ -1,0 +1,192 @@
+.archive-by-type{
+    @apply
+    w-full
+    py-12;
+
+    @media(min-width: 1023px){
+        @apply
+        py-16;
+    }
+
+    &__content{
+        @apply
+        grid
+        grid-cols-1
+        gap-[20px];            
+    }
+
+    &__title{
+        @apply
+        block
+        w-full
+        text-2xl
+        text-gray-400
+        font-bold
+        mx-auto;
+
+        @media(min-width: 1023px){
+            @apply
+            text-3xl;            
+        }
+    }
+
+    &__columns{
+        @apply
+        w-full
+        flex
+        flex-col
+        gap-5;
+
+        @media(min-width: 767px){
+            @apply
+            flex-row;
+        }
+
+        @media(min-width: 1439px){
+            @apply
+            gap-10;
+        }        
+    }
+
+    &__sidebar{
+        @apply
+        overflow-hidden
+        w-full
+        border-1
+        border-gray-400
+        rounded
+        py-1
+        px-3;
+
+        @media(min-width: 767px){
+            @apply
+            w-1/4;
+        }
+    }
+
+    &__sidebar-list{
+        @apply
+        w-full;
+    }
+
+    &__sidebar-item{
+        @apply
+        w-full;
+
+        & + li {
+            @apply
+            border-t-1
+            border-gray-300;
+        }
+
+        &--current{
+            .archive-by-type__sidebar-link{
+                @apply
+                font-medium;
+            }
+        }
+    }
+
+    &__sidebar-link{
+        @extend .transition;
+        @apply
+        block
+        w-full
+        py-3;
+        
+        &:hover{
+            @apply
+            font-medium;
+        }
+    }
+
+    &__posts{
+        @apply
+        overflow-hidden
+        w-full
+        flex
+        flex-col
+        gap-5;
+
+        @media(min-width: 767px){
+            @apply
+            w-3/4;
+        }
+    }
+
+    &__posts-title{
+        @apply
+        block
+        w-full
+        text-xl
+        text-gray-400
+        font-medium
+        -mt-[5px]
+        mx-auto;
+    }
+
+    &__posts-list{
+        @apply
+        w-full
+        flex
+        flex-col
+        gap-2;
+
+        @media(min-width: 600px){
+            @apply
+            flex-row
+            flex-wrap;
+        }
+    }
+
+    &__posts-list-item{
+        @apply
+        w-full;
+
+        @media(min-width: 600px){
+            @apply
+            w-initial
+            flex-auto;
+        }
+    }
+
+    &__posts-list-link{
+        @extend .transition;
+        @apply
+        overflow-hidden
+        flex
+        flex-col
+        gap-1
+        w-full
+        h-full
+        text-sm
+        text-gray-400
+        border-1
+        border-gray-400
+        rounded
+        p-3;
+
+        &:hover{
+            @apply
+            bg-gray-200;
+        }
+    }
+
+    &__posts-list-title{
+        @apply
+        block
+        w-full
+        text-lg
+        text-gray-400
+        font-bold;     
+    }
+
+    &__posts-list-excerpt{
+        @apply
+        block
+        flex-1
+        w-full
+        text-sm
+        text-gray-400;
+    }
+}

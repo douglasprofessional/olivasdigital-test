@@ -8,7 +8,7 @@
         py-16;
     }
 
-    .container{
+    &__content{
         @apply
         grid
         grid-cols-1
@@ -19,14 +19,14 @@
         @apply
         block
         w-full
-        text-xl
+        text-2xl
         text-gray-400
-        font-medium
+        font-bold
         mx-auto;
 
         @media(min-width: 1023px){
             @apply
-            text-2xl;            
+            text-3xl;            
         }
     }
 
