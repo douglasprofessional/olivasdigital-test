@@ -54,19 +54,6 @@ class Options {
 					'redirect'    => false,
 				)
 			);
-
-			acf_add_options_page(
-				array(
-					'page_title'  => 'Footer',
-					'menu_title'  => 'Footer',
-					'menu_slug'   => 'footer-config',
-					'capability'  => 'edit_posts',
-					'parent_slug' => '',
-					'position'    => 21,
-					'icon_url'    => 'dashicons-admin-page',
-					'redirect'    => false,
-				)
-			);
 		}
 	}
 }
