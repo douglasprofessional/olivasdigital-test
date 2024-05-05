@@ -1,0 +1,151 @@
+.contact{
+    @apply
+    w-full
+    py-12;
+
+    @media(min-width: 1023px){
+        @apply
+        py-16;
+    }
+
+    &__content{
+        @apply
+        w-full
+        grid
+        grid-cols-1
+        gap-[20px];
+    }
+
+    &__title{
+        @apply
+        block
+        w-full
+        text-2xl
+        text-center
+        text-gray-400
+        font-bold
+        mx-auto;
+
+        @media(min-width: 1023px){
+            @apply
+            text-3xl;            
+        }
+    }
+
+    .wpcf7-form{
+        @apply
+        w-full
+        mx-auto;
+
+        @media(min-width: 767px){
+            @apply
+            max-w-screen-50
+        }
+
+        > p{
+            @apply
+            relative
+            overflow-hidden
+            w-full;
+
+            label{
+                @apply
+                w-full
+                text-base
+                text-gray-400
+                font-medium;
+
+                span.wpcf7-form-control-wrap{
+                    @apply
+                    relative
+                    flex
+                    w-full;
+
+                    textarea.wpcf7-textarea,
+                    input.wpcf7-form-control{
+                        @apply
+                        relative
+                        w-full
+                        bg-white
+                        text-sm
+                        text-gray-400
+                        border-1
+                        border-gray-400
+                        rounded
+                        p-3;
+
+                        .wpcf7-not-valid{
+                            @apply
+                            border-red-600
+                            bg-red-300;
+                        }
+                    }
+
+                    .wpcf7-textarea{
+                        @apply
+                        h-20;
+                    }
+
+                    span.wpcf7-not-valid-tip{
+                        @apply
+                        absolute
+                        -bottom-1
+                        left-3
+                        text-[12px]
+                        text-red-600;
+                    }
+                }
+            }
+
+            span.wpcf7-spinner{
+                visibility: visible !important;
+                @apply
+                mr-0;
+            }
+
+            input.wpcf7-submit{
+                @extend .transition;
+                @apply
+                w-fit
+                flex
+                items-center
+                gap-1
+                rounded
+                text-base
+                text-gray-400
+                cursor-pointer
+                border-1
+                border-gray-400
+                py-1
+                px-3;
+        
+                &:hover{
+                    @apply
+                    bg-gray-200;
+                }
+            }
+
+            &:last-of-type{
+                @apply
+                flex
+                justify-between
+                items-center
+                mt-4;
+            }
+        }
+
+        .wpcf7-response-output{
+            @apply
+            w-full
+            text-sm
+            text-gray-400
+            border-1
+            border-gray-400
+            rounded
+            p-3
+            mt-4
+            mb-0
+            mx-0;
+        }
+    }
+}
