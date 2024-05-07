@@ -27,6 +27,17 @@
             text-gray-400;
         }
 
+        .content-project__type a{
+            @extend .transition;
+            @apply
+            text-gray-400;
+
+            &:hover{
+                @apply
+                text-orange-900;
+            }
+        }
+
         &--thumbnail{
             @apply
             min-h-medium
@@ -38,6 +49,16 @@
             .content-project__date{
                 @apply
                 text-white;
+            }
+
+            .content-project__type a{
+                @apply
+                text-white;
+
+                &:hover{
+                    @apply
+                    text-yellow-500;                
+                }
             }
 
             @media(min-width: 1023px){

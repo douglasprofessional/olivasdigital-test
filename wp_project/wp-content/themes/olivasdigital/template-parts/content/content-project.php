@@ -32,13 +32,13 @@ $terms = wp_get_post_terms(get_the_ID(), $taxonomy);
 			<h2 class="content-project__type">
 				<?php
 					if ($terms && !is_wp_error($terms)) {
-						$category_names = array();
+						$category_links = array();
 
 						foreach ($terms as $term) {
-							$category_names[] = $term->name;
+							$category_links[] = '<a href="' . esc_url(get_term_link($term)) . '">' . $term->name . '</a>';
 						}
-
-						echo '"' . implode(', ', $category_names) . '"';
+					
+						echo implode(', ', $category_links);
 					}
 				?>
 			</h2>
